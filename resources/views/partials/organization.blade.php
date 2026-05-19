@@ -1,106 +1,67 @@
 <section class="organization-section" id="organization">
-
     <div class="container">
-
         <!-- TITLE -->
         <div class="section-title text-center" data-aos="fade-up">
-
             <h2>Organization Experience</h2>
-
             <p>
-                Pengalaman organisasi dan kepanitiaan yang saya ikuti
+                Organization and event experience that I have participated in
             </p>
-
         </div>
-
-
-
         <div class="organization-wrapper mt-5">
-
             <!-- ITEM -->
             <div class="organization-item" data-aos="fade-right">
-
                 <div class="organization-icon">
                     <i class="bi bi-people-fill"></i>
                 </div>
-
                 <div class="organization-content">
-
                     <span class="organization-year">
-                        2025 - Sekarang
+                        2025 - 2026
                     </span>
-
                     <h4>
-                        Himpunan Mahasiswa Teknik Informatika
+                        Leader Of Student Association Informatics Engineering
                     </h4>
-
                     <p>
-                        Aktif dalam kegiatan organisasi, pengembangan program kerja,
-                        serta kolaborasi tim dalam berbagai kegiatan mahasiswa.
+                        Active in organizational activities, work program development,
+                        and team collaboration in various student activities.
                     </p>
-
                 </div>
-
             </div>
-
-
-
             <!-- ITEM -->
             <div class="organization-item" data-aos="fade-left">
-
                 <div class="organization-icon">
                     <i class="bi bi-lightbulb-fill"></i>
                 </div>
-
                 <div class="organization-content">
-
                     <span class="organization-year">
-                        2025
+                        2026 - Now
                     </span>
-
                     <h4>
-                        Departemen Kreativitas
+                        Head of Creativity Department
                     </h4>
-
                     <p>
-                        Bertanggung jawab dalam desain visual, media publikasi,
-                        dan pengembangan ide kreatif organisasi.
+                        Responsible for visual design, media publishing,
+                        and creative ideas development organization.
                     </p>
-
                 </div>
-
             </div>
-
-
-
             <!-- ITEM -->
             <div class="organization-item" data-aos="fade-right">
-
                 <div class="organization-icon">
                     <i class="bi bi-award-fill"></i>
                 </div>
-
                 <div class="organization-content">
-
                     <span class="organization-year">
-                        2024 - 2025
+                        2023 - Now
                     </span>
-
                     <h4>
-                        Panitia Event Kampus
+                        Volunteer Of Kampus Event
                     </h4>
-
                     <p>
-                        Berpartisipasi dalam pengelolaan acara kampus,
-                        koordinasi tim, serta pelaksanaan event mahasiswa.
+                        Participate in campus event management,
+                        team coordination, and student event implementation.
                     </p>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>

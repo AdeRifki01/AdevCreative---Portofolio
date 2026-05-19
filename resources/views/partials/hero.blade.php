@@ -37,21 +37,21 @@
                     
                     <!-- Social Media Links -->
                     <div class="hero-social">
-                        <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter">
-                            <i class="bi bi-twitter-x"></i>
-                        </a>
-                        <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                        <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub">
+                        <a href="https://github.com/AdeRifki01" target="_blank" class="social-icon" aria-label="GitHub">
                             <i class="bi bi-github"></i>
                         </a>
+                        <a href="https://wa.me/089635618750" target="_blank" class="social-icon" aria-label="Whatsapp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/derifky15/" target="_blank" class="social-icon" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <!-- <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter">
+                            <i class="bi bi-twitter-x"></i>
+                        </a> -->
+                        <!-- <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a> -->
                     </div>
                     
                     <!-- Action Buttons -->

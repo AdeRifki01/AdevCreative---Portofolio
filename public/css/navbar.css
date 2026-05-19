@@ -230,20 +230,20 @@ body.light-mode .nav-divider {
 
 /* DOWNLOAD CV BUTTON */
 .btn-download-cv {
-    background: #e11d48;
+    background: #38bdf8;
     color: #ffffff !important;
     border: none;
     border-radius: 30px;
     padding: 8px 18px !important;
     font-size: 14px;
     font-weight: 600;
-    box-shadow: 0 4px 15px rgba(225, 29, 72, 0.35);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .btn-download-cv:hover {
-    background: #f43f5e;
-    box-shadow: 0 6px 20px rgba(225, 29, 72, 0.5);
+    background: #000000;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.5);
     transform: translateY(-2px);
 }
 
