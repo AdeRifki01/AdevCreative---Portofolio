@@ -1,0 +1,177 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #0f172a;
+}
+
+/* BACK TO TOP */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 18px;
+    background: #38bdf8;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#backToTop:hover {
+    background: #0ea5e9;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    transition:
+        background 0.4s ease,
+        color 0.4s ease;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* LIGHT MODE GLOBAL OVERRIDES */
+body.light-mode {
+    background: #f8fafc !important;
+    color: #0f172a !important;
+}
+
+/* Section overrides */
+body.light-mode .hero-section {
+    background: #f8fafc !important;
+    color: #0f172a !important;
+}
+body.light-mode .hero-title {
+    color: #0f172a !important;
+}
+body.light-mode .hero-description {
+    color: #475569 !important;
+}
+
+body.light-mode .about-section {
+    background: #f1f5f9 !important;
+    color: #0f172a !important;
+}
+body.light-mode .about-description {
+    color: #475569 !important;
+}
+body.light-mode .about-info-card {
+    background: #ffffff !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05) !important;
+}
+body.light-mode .about-info-card p {
+    color: #475569 !important;
+}
+
+body.light-mode .skills-section {
+    background: #f8fafc !important;
+    color: #0f172a !important;
+}
+body.light-mode .skill-card {
+    background: #ffffff !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05) !important;
+}
+body.light-mode .skill-card h4 {
+    color: #0f172a !important;
+}
+body.light-mode .progress {
+    background: #e2e8f0 !important;
+}
+
+body.light-mode .project-section {
+    background: #f1f5f9 !important;
+    color: #0f172a !important;
+}
+body.light-mode .project-card {
+    background: #ffffff !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05) !important;
+}
+body.light-mode .project-content h4 {
+    color: #0f172a !important;
+}
+body.light-mode .project-content p {
+    color: #475569 !important;
+}
+
+body.light-mode .organization-section {
+    background: #f8fafc !important;
+    color: #0f172a !important;
+}
+body.light-mode .organization-item {
+    background: #ffffff !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05) !important;
+}
+body.light-mode .organization-content h4 {
+    color: #0f172a !important;
+}
+body.light-mode .organization-content p {
+    color: #475569 !important;
+}
+
+body.light-mode .contact-section {
+    background: #f1f5f9 !important;
+    color: #0f172a !important;
+}
+body.light-mode .contact-info h3 {
+    color: #0f172a !important;
+}
+body.light-mode .contact-info p {
+    color: #475569 !important;
+}
+body.light-mode .social-media a {
+    background: #ffffff !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+}
+body.light-mode .social-media a:hover {
+    background: #38bdf8 !important;
+    color: #fff !important;
+}
+body.light-mode .contact-form {
+    background: #ffffff !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05) !important;
+}
+body.light-mode .form-control {
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    color: #0f172a !important;
+}
+body.light-mode .form-control:focus {
+    border-color: #38bdf8 !important;
+}
+
+body.light-mode .section-title h2 {
+    color: #0f172a !important;
+}
+body.light-mode .section-title p {
+    color: #475569 !important;
+}
+body.light-mode #backToTop {
+    background: #38bdf8 !important;
+}
+body.light-mode #backToTop:hover {
+    background: #0ea5e9 !important;
+}

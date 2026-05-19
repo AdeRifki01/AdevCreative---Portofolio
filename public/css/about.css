@@ -1,0 +1,75 @@
+/* ABOUT SECTION */
+.about-section {
+    padding: 120px 0;
+    background: #111827;
+    color: #fff;
+}
+
+/* TITLE */
+.section-title h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: #94a3b8;
+}
+
+/* IMAGE */
+.about-image-wrapper {
+    text-align: center;
+}
+
+.about-image {
+    width: 380px;
+    border-radius: 30px;
+}
+
+/* TEXT */
+.about-heading {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    color: #94a3b8;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* INFO CARD */
+.about-info-card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.about-info-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-info-card h5 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.about-info-card p {
+    margin: 0;
+    color: #cbd5e1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+    .about-section {
+        text-align: center;
+    }
+
+    .about-image {
+        width: 280px;
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,91 @@
+/* SKILLS SECTION */
+.skills-section {
+    padding: 120px 0;
+    background: #0f172a;
+    color: #fff;
+}
+
+/* SKILL CARD */
+.skill-card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 25px;
+    transition: 0.4s ease;
+    height: 100%;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+/* ICON */
+.skill-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(56, 189, 248, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.skill-icon i {
+    font-size: 35px;
+    color: #38bdf8;
+}
+
+/* TITLE */
+.skill-card h4 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* PROGRESS */
+.progress {
+    height: 12px;
+    border-radius: 20px;
+    background: #0f172a;
+    overflow: hidden;
+}
+
+.progress-bar {
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 12px;
+}
+
+/* BAR COLORS */
+.html-bar {
+    width: 90%;
+    background: #f97316;
+}
+
+.css-bar {
+    width: 85%;
+    background: #3b82f6;
+}
+
+.js-bar {
+    width: 75%;
+    background: #facc15;
+    color: #000;
+}
+
+.php-bar {
+    width: 80%;
+    background: #a855f7;
+}
+
+.bootstrap-bar {
+    width: 88%;
+    background: #9333ea;
+}
+
+.laravel-bar {
+    width: 78%;
+    background: #ef4444;
+}
