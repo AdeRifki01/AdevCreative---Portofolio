@@ -18,16 +18,16 @@
             <!-- SOCIAL -->
             <div class="footer-social">
 
-                <a href="#">
-                    <i class="bi bi-instagram"></i>
-                </a>
-
-                <a href="#">
+                <a href="https://github.com/AdeRifki01">
                     <i class="bi bi-github"></i>
                 </a>
 
-                <a href="#">
-                    <i class="bi bi-linkedin"></i>
+                <a href="https://www.instagram.com/derifky15/">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="https://wa.me/089635618750">
+                    <i class="bi bi-whatsapp"></i>
                 </a>
 
             </div>

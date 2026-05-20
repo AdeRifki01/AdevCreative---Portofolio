@@ -11,7 +11,8 @@
             <!-- ITEM -->
             <div class="organization-item" data-aos="fade-right">
                 <div class="organization-icon">
-                    <i class="bi bi-people-fill"></i>
+                    <!-- <i class="bi bi-people-fill"></i> -->
+                    <img src="{{ asset('img/hmtf.JPG') }}" alt="" style="width: 65px; height: 65px; border-radius: 10%; object-fit: cover; object-position: center;">
                 </div>
                 <div class="organization-content">
                     <span class="organization-year">
@@ -29,7 +30,8 @@
             <!-- ITEM -->
             <div class="organization-item" data-aos="fade-left">
                 <div class="organization-icon">
-                    <i class="bi bi-lightbulb-fill"></i>
+                    <!-- <i class="bi bi-lightbulb-fill"></i> -->
+                    <img src="{{ asset('img/bem.JPG') }}" alt="" style="width: 65px; height: 65px; border-radius: 10%; object-fit: cover; object-position: center;">
                 </div>
                 <div class="organization-content">
                     <span class="organization-year">
@@ -47,7 +49,8 @@
             <!-- ITEM -->
             <div class="organization-item" data-aos="fade-right">
                 <div class="organization-icon">
-                    <i class="bi bi-award-fill"></i>
+                    <!-- <i class="bi bi-award-fill"></i> -->
+                    <img src="{{ asset('img/volunteer.jpeg') }}" alt="" style="width: 65px; height: 65px; border-radius: 10%; object-fit: cover; object-position: center;">
                 </div>
                 <div class="organization-content">
                     <span class="organization-year">
