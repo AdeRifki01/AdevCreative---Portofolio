@@ -35,7 +35,7 @@
                             <a href="#" class="btn-project-demo">
                                 Live Demo
                             </a>
-                            <a href="#" class="btn-project-github">
+                            <a href="https://github.com/AdeRifki01/PORTOFOLIO_ADE_RIFKI" class="btn-project-github">
                                 GitHub
                             </a>
                         </div>
@@ -64,7 +64,7 @@
                             <a href="#" class="btn-project-demo">
                                 Live Demo
                             </a>
-                            <a href="#" class="btn-project-github">
+                            <a href="https://github.com/AdeRifki01/Calculator_Sederhana" class="btn-project-github">
                                 GitHub
                             </a>
                         </div>
@@ -93,7 +93,36 @@
                             <a href="#" class="btn-project-demo">
                                 Live Demo
                             </a>
-                            <a href="#" class="btn-project-github">
+                            <a href="https://github.com/AdeRifki01/Warung_Kopi" class="btn-project-github">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT ITEM -->
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ asset('img/smartCeleng.png') }}" alt="Project 3" class="img-fluid">
+                    </div>
+                    <div class="project-content">
+                        <h4>Smart Celeng</h4>
+                        <p>
+                            Aplikasi android untuk menabung dengan tampilan modern,
+                            responsive, dan animasi interaktif.
+                        </p>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>Bootstrap</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-button">
+                            <a href="#" class="btn-project-demo">
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/AdeRifki01/Smart_Celeng" class="btn-project-github">
                                 GitHub
                             </a>
                         </div>
