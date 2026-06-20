@@ -2,21 +2,21 @@
 
 @section('content')
 
-    @include('partials.navbar')
+    @include('components.navbar')
 
-    @include('partials.hero')
+    @include('sections.hero')
 
-    @include('partials.about')
+    @include('sections.about')
 
-    @include('partials.skills')
+    @include('sections.skills')
 
-    @include('partials.project')
+    @include('sections.projects')
 
-    @include('partials.organization')
+    @include('sections.organizations')
 
-    @include('partials.contact')
+    @include('sections.contact')
 
-    @include('partials.footer')
+    @include('components.footer')
 
     <button id="backToTop">
         <i class="bi bi-arrow-up"></i>

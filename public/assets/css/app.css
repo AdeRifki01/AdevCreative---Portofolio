@@ -1,0 +1,17 @@
+/* Global CSS */
+@import "global.css";
+
+/* Components */
+@import "components/navbar.css";
+@import "components/footer.css";
+
+/* Sections */
+@import "sections/hero.css";
+@import "sections/about.css";
+@import "sections/skills.css";
+@import "sections/project.css";
+@import "sections/organization.css";
+@import "sections/contact.css";
+
+/* Responsive (if any) */
+@import "responsive.css";
