@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- favicon -->
+    <link rel="icon" href="{{ asset('assets/images/profile/DeriftingDigital.png') }}">
+
     <!-- Primary Meta Tags -->
-    <title>My Portfolio - ADE RIFKI</title>
-    <meta name="title" content="My Portfolio - ADE RIFKI">
+    <title>ADevCreative - Ade Rifki</title>
+    <meta name="title" content="ADevCreative">
     <meta name="description" content="Portofolio Ade Rifki, mahasiswa Teknik Informatika dan Web Developer yang berfokus pada pengembangan website modern, antarmuka pengguna, dan teknologi kreatif.">
     <meta name="keywords" content="Ade Rifki, Web Developer, Teknik Informatika, Portofolio, UI Designer, Laravel, Bootstrap">
     <meta name="author" content="Ade Rifki">
@@ -14,7 +17,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url('/') }}">
-    <meta property="og:title" content="My Portfolio - ADE RIFKI">
+    <meta property="og:title" content="ADevCreative - Ade Rifki">
     <meta property="og:description" content="Portofolio Ade Rifki, mahasiswa Teknik Informatika dan Web Developer yang berfokus pada pengembangan website modern, antarmuka pengguna, dan teknologi kreatif.">
     <meta property="og:image" content="{{ asset('assets/images/profile/my-profile.jpg') }}">
 
