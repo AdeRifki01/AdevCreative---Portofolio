@@ -1,61 +1,106 @@
 /* SKILLS SECTION */
 .skills-section {
-    padding: 120px 0;
-    background: #0f172a;
+    padding: 80px 0;
     color: #fff;
 }
 
 /* SKILL CARD */
 .skill-card {
-    background: #1e293b;
-    padding: 30px;
-    border-radius: 25px;
+    background: #111827; /* Darker background matching image */
+    padding: 25px 20px;
+    border-radius: 20px;
     transition: 0.4s ease;
     height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.03);
 }
 
 .skill-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
-/* ICON */
-.skill-icon {
-    width: 70px;
-    height: 70px;
-    background: rgba(56, 189, 248, 0.1);
+/* HEADER (ICON + TITLE) */
+.skill-header-card {
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 20px;
+    gap: 15px;
     margin-bottom: 25px;
 }
 
-.skill-icon i {
-    font-size: 35px;
-    color: #38bdf8;
+.skill-icon-card {
+    width: 45px;
+    height: 45px;
+    background: #1e293b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.05);
 }
 
-/* TITLE */
 .skill-card h4 {
-    margin-bottom: 20px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    color: #f8fafc;
+}
+
+/* STATS TEXT */
+.skill-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.prof-label {
+    font-size: 12px;
+    color: #94a3b8;
     font-weight: 600;
+}
+
+.prof-percent {
+    font-size: 13px;
+    font-weight: 700;
 }
 
 /* PROGRESS */
-.progress {
-    height: 12px;
-    border-radius: 20px;
-    background: #0f172a;
+.skill-progress {
+    height: 6px;
+    border-radius: 10px;
+    background: #1e293b;
     overflow: hidden;
 }
 
-.progress-bar {
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    text-align: right;
-    padding-right: 10px;
-    line-height: 12px;
+.skill-progress .progress-bar {
+    border-radius: 4px;
+}
+
+/* MOBILE RESPONSIVE ADJUSTMENTS */
+@media (max-width: 575px) {
+    .skill-card {
+        padding: 15px 12px;
+    }
+    .skill-header-card {
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    .skill-icon-card {
+        width: 35px;
+        height: 35px;
+    }
+    .skill-icon-card img {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .skill-card h4 {
+        font-size: 14px;
+    }
+    .prof-label,
+    .prof-percent {
+        font-size: 11px;
+    }
 }
 
 /* BAR COLORS */

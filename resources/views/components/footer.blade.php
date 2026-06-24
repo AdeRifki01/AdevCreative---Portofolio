@@ -26,7 +26,7 @@
                     <i class="bi bi-instagram"></i>
                 </a>
 
-                <a href="https://wa.me/089635618750">
+                <a href="https://wa.me/6289635618750?text=Halo%20Ade%20Rifki,%20saya%20tertarik%20untuk%20bekerja%20sama%20dengan%20Anda." target="_blank">
                     <i class="bi bi-whatsapp"></i>
                 </a>
 

@@ -1,0 +1,126 @@
+/* DERIFTING SECTION */
+.derifting-section {
+    padding: 80px 0;
+    color: #ffffff;
+    position: relative;
+}
+
+/* LOGO WRAPPER */
+.derifting-logo-wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+}
+
+.derifting-logo {
+    max-width: 300px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+    transition: 0.4s ease;
+}
+
+.derifting-logo-wrapper:hover .derifting-logo {
+    transform: translateY(-10px);
+}
+
+.glow-effect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(17, 24, 39, 0) 70%
+    );
+    z-index: 1;
+    border-radius: 50%;
+    filter: blur(20px);
+}
+
+/* RIGHT CONTENT */
+.derifting-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.derifting-desc {
+    color: #94a3b8;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* SERVICES GRID (4 COLUMNS) */
+.service-card {
+    background: #1e293b;
+    padding: 30px 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s ease;
+    text-align: center;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    background: #172233;
+    border-color: rgba(56, 189, 248, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.service-card i {
+    font-size: 32px;
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+.service-card:hover i {
+    background: #38bdf8;
+    color: #111827;
+}
+
+.service-card h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #f8fafc;
+}
+
+.service-card p {
+    font-size: 13px;
+    color: #94a3b8;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* BUTTON */
+.btn-primary-derifting {
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-primary-derifting:hover {
+    background: #0ea5e9;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+}

@@ -3,7 +3,7 @@
 
         <!-- Logo -->
         <a class="navbar-brand logo-text" href="#hero">
-            Porto<span class="logo-accent">folio</span>
+            Ade<span class="logo-accent">Rifki</span>
         </a>
 
         <!-- Toggle Mobile -->
@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
 
             <!-- Navigation Links (Centered) -->
-            <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav ms-auto me-3">
                 <li class="nav-item">
                     <a class="nav-link active" href="#hero">Home</a>
                 </li>
@@ -36,10 +36,13 @@
                     <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#project">Portfolio</a>
+                    <a class="nav-link" href="#project">Project</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#organization">Organization</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#derifting">Business</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -52,17 +55,6 @@
                 <!-- Vertical Divider -->
                 <div class="nav-divider"></div>
                 
-                <!-- Custom Theme Toggle Switch -->
-                <div class="theme-switch-wrapper">
-                    <label class="theme-switch" for="themeToggleCheckbox">
-                        <input type="checkbox" id="themeToggleCheckbox" />
-                        <div class="slider round-slider">
-                            <i class="bi bi-moon-stars-fill moon-icon"></i>
-                            <i class="bi bi-sun-fill sun-icon"></i>
-                            <span class="slider-ball"></span>
-                        </div>
-                    </label>
-                </div>
 
                 <!-- Download CV Button -->
                 <a href="https://drive.google.com/file/d/11_iFH-UcK6HNJtaR3TWiZRd7ZZlm1MI7/view?usp=sharing" 

@@ -27,14 +27,14 @@ body {
     width: calc(100% - 40px);
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px 24px;
+    padding: 8px 20px;
     border-radius: 50px;
     border: 1px solid rgba(56, 189, 248, 0.25);
     background: rgba(15, 23, 42, 0.75);
     backdrop-filter: blur(12px);
     box-shadow:
         0 10px 30px rgba(0, 0, 0, 0.3),
-        0 0 20px rgba(56, 189, 248, 0.15);
+        0 0 20px #38bdf826;
     z-index: 1030;
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -53,7 +53,7 @@ body.light-mode .custom-navbar {
     box-shadow:
         0 10px 30px rgba(0, 0, 0, 0.4),
         0 0 25px rgba(56, 189, 248, 0.25);
-    padding: 8px 24px;
+    padding: 6px 20px;
 }
 
 body.light-mode .custom-navbar.navbar-scrolled {
@@ -65,25 +65,29 @@ body.light-mode .custom-navbar.navbar-scrolled {
 
 /* LOGO */
 .logo-text {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     color: #ffffff;
     text-decoration: none;
-    transition: color 0.3s ease;
     letter-spacing: -0.5px;
 }
 
+.logo-text:hover,
+.logo-text:focus {
+    color: #ffffff;
+}
+
 .logo-accent {
-    color: #38bdf8;
-    transition: color 0.3s ease;
+    color: #0ea5e9;
 }
 
 body.light-mode .logo-text {
     color: #0f172a;
 }
 
-body.light-mode .logo-accent {
-    color: #0ea5e9;
+body.light-mode .logo-text:hover,
+body.light-mode .logo-text:focus {
+    color: #0f172a;
 }
 
 /* NAVIGATION LINKS */
@@ -91,7 +95,7 @@ body.light-mode .logo-accent {
     color: #94a3b8;
     font-weight: 500;
     font-size: 15px;
-    padding: 8px 16px !important;
+    padding: 6px 14px !important;
     position: relative;
     transition: color 0.3s ease;
 }
@@ -217,7 +221,7 @@ body.light-mode .nav-divider {
 
 .theme-switch input:checked + .slider.round-slider .slider-ball {
     transform: translateX(24px);
-    background-color: #ea580c;
+    background-color: #0f172a;
 }
 
 .theme-switch input:checked + .slider.round-slider .moon-icon {
@@ -225,7 +229,7 @@ body.light-mode .nav-divider {
 }
 
 .theme-switch input:checked + .slider.round-slider .sun-icon {
-    color: #ea580c;
+    color: #0f172a;
 }
 
 /* DOWNLOAD CV BUTTON */
@@ -234,7 +238,7 @@ body.light-mode .nav-divider {
     color: #ffffff !important;
     border: none;
     border-radius: 30px;
-    padding: 8px 18px !important;
+    padding: 6px 16px !important;
     font-size: 14px;
     font-weight: 600;
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
@@ -242,7 +246,7 @@ body.light-mode .nav-divider {
 }
 
 .btn-download-cv:hover {
-    background: #000000;
+    background: #0f172a;
     box-shadow: 0 6px 20px rgba(255, 255, 255, 0.5);
     transform: translateY(-2px);
 }

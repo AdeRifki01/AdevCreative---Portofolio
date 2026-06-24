@@ -1,56 +1,73 @@
 <section class="about-section" id="about">
     <div class="container">
-
-        <!-- TITLE -->
+        <!-- TITLE
         <div class="section-title text-center" data-aos="fade-up">
             <h2>About Me</h2>
-            <p>Perkenalan singkat tentang diri saya</p>
-        </div>
-        <div class="row align-items-center mt-5">
+            <p>Get to know me better</p>
+        </div> -->
+        <div class="row">
 
-            <!-- LEFT -->
-            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-                <div class="about-image-wrapper">
-                    <img src="{{ asset('assets/images/organizations/hmtf-uia.JPG') }}" alt="About Image" class="img-fluid about-image" loading="lazy">
+            
+            <!-- LEFT: TEXT & SKILLS -->
+            <div class="col-lg-7 pe-lg-5" data-aos="fade-right">
+                <h2 class="about-title">About <span class="text-blue">Me</span></h2>
+                
+                <p class="about-desc">
+                    Haii, saya Ade Rifki, Mahasiswa Teknik Informatika yang memiliki minat dalam pengembangan web, desain, editing video, dan fotografi. 
+                    Membuat visualisasi yang modern dan minimalis adalah kesukaan saya.
+                </p>
+
+                <!-- SIMPLE SKILLS GRID -->
+                <div class="simple-skills-grid mt-2">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <i class="bi bi-person-vcard"></i>
+                            <h5>Identity</h5>
+                        </div>
+                        <p class="skill-text">Ade Rifki<br><a href="mailto:ade354171@gmail.com">ade354171@gmail.com</a></p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <i class="bi bi-mortarboard"></i>
+                            <h5>Education</h5>
+                        </div>
+                        <p class="skill-text">Universitas Islam As-Syafi'iyah. Teknik Informatika.</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <i class="bi bi-code-slash"></i>
+                            <h5>Specialization</h5>
+                        </div>
+                        <p class="skill-text">Web Developer, UI/UX, Photographer, Video Editor.</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <i class="bi bi-controller"></i>
+                            <h5>Hobbies</h5>
+                        </div>
+                        <p class="skill-text"> Futsal, Badminton, Coding, Trekking.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- RIGHT -->
-            <div class="col-lg-6" data-aos="fade-left">
-                <h3 class="about-heading">Informatics Student & Web Developer</h3>
-                <p class="about-description">
-                    Saya adalah mahasiswa Teknik Informatika yang memiliki
-                    minat dalam pengembangan website, desain antarmuka,
-                    dan teknologi kreatif. Saya senang mempelajari hal baru,
-                    bekerja dalam tim, serta membangun project yang modern
-                    dan interaktif.
-                </p>
-
-                <!-- INFO -->
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="about-info-card">
-                            <h5>Name</h5>
-                            <p>Ade Rifki</p>
-                        </div>
+            <!-- RIGHT: IMAGE GRID -->
+            <div class="col-lg-5 mt-5 mt-lg-0 d-flex justify-content-center align-items-center" data-aos="fade-left">
+                <div class="about-images-grid">
+                    <div class="img-box">
+                        <span class="img-tag">Web Developer</span>
+                        <img src="{{ asset('assets/images/profile/web-developer.jpeg') }}" alt="Professional">
                     </div>
-                    <div class="col-sm-6">
-                        <div class="about-info-card">
-                            <h5>Email</h5>
-                            <p>ade354171@gmail.com</p>
-                        </div>
+                    <div class="img-box">
+                        <span class="img-tag">Graphic Designer</span>
+                        <img src="{{ asset('assets/images/profile/graphic-design.jpeg') }}" alt="Creative">
                     </div>
-                    <div class="col-sm-6">
-                        <div class="about-info-card">
-                            <h5>Education</h5>
-                            <p>Informatic Engineering</p>
-                        </div>
+                    <div class="img-box">
+                        <span class="img-tag">Video Editor</span>
+                        <img src="{{ asset('assets/images/organizations/hmtf-uia.JPG') }}" alt="Developer">
                     </div>
-                    <div class="col-sm-6">
-                        <div class="about-info-card">
-                            <h5>Programmer</h5>
-                            <p>Web Developer, UI Designer</p>
-                        </div>
+                    <div class="img-box">
+                        <span class="img-tag">Photographer</span>
+                        <img src="{{ asset('assets/images/profile/volunteer.jpeg') }}" alt="Designer">
                     </div>
                 </div>
             </div>

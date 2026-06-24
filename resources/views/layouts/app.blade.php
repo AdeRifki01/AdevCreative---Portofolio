@@ -35,6 +35,21 @@
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="ambient-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+
+        <!-- Floating Geometric Accents -->
+        <div class="accent accent-1"><i class="bi bi-asterisk"></i></div>
+        <div class="accent accent-2"><i class="bi bi-circle"></i></div>
+        <div class="accent accent-3"><i class="bi bi-x-lg"></i></div>
+        <div class="accent accent-4"><i class="bi bi-square"></i></div>
+        <div class="accent accent-5"><i class="bi bi-triangle"></i></div>
+        <div class="accent accent-6"><i class="bi bi-plus-lg"></i></div>
+    </div>
     <script>
         (function () {
             const currentTheme = localStorage.getItem("theme") || "dark";

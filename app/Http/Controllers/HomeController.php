@@ -11,8 +11,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $projects = Project::all();
-        $skills = Skill::all();
+        $projects = Project::orderBy('sort_order')->get();
+        $skills = Skill::orderBy('sort_order')->get();
         $organizations = Organization::orderBy('sort_order')->get();
 
         return view('pages.home', compact('projects', 'skills', 'organizations'));

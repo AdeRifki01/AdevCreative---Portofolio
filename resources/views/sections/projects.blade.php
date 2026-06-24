@@ -20,22 +20,27 @@
                     <div class="project-content">
                         <h4>{{ $project->title }}</h4>
                         <p>
-                            {{ $project->description }}
+                            {!! nl2br(e($project->description)) !!}
                         </p>
 
-                        <!-- TECHNOLOGY (Optional: could be a separate table later, static for now or removed) -->
+                        <!-- TECHNOLOGY -->
                         <div class="project-tech">
-                            <!-- You can add technology fields in DB later if needed -->
+                            @if(!empty($project->tech_stack) && is_array($project->tech_stack))
+                                @foreach($project->tech_stack as $tech)
+                                    <span>{{ $tech }}</span>
+                                @endforeach
+                            @endif
                         </div>
 
                         <!-- BUTTON -->
-                        <div class="project-button">
-                            @if($project->link_url)
-                            <a href="{{ $project->link_url }}" target="_blank" class="btn-project-github">
-                                GitHub / Link
+                        <!-- <div class="project-button mt-4">
+                            <a href="{{ $project->link_url ?? '#' }}" target="_blank" class="btn-project-code">
+                                <i class="bi bi-github"></i> Code
                             </a>
-                            @endif
-                        </div>
+                            <a href="{{ $project->link_url ?? '#' }}" target="_blank" class="btn-project-demo">
+                                <i class="bi bi-box-arrow-up-right"></i> Demo
+                            </a>
+                        </div> -->
                     </div>
                 </div>
             </div>
