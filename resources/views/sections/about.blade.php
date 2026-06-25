@@ -63,14 +63,29 @@
                     </div>
                     <div class="img-box">
                         <span class="img-tag">Video Editor</span>
-                        <img src="{{ asset('assets/images/organizations/hmtf-uia.JPG') }}" alt="Developer">
+                        <img src="{{ asset('assets/images/profile/editingVideo.jpg') }}" alt="Developer">
                     </div>
                     <div class="img-box">
                         <span class="img-tag">Photographer</span>
                         <img src="{{ asset('assets/images/profile/volunteer.jpeg') }}" alt="Designer">
                     </div>
                 </div>
+                </div>
             </div>
+
+            <!-- SCATTERED PHOTO COLLAGE -->
+            <div class="col-12 mt-2" data-aos="fade-up">
+                <div class="about-collage">
+                    <img src="{{ asset('assets/images/organizations/hmtf-uia.JPG') }}" class="collage-img img-1" alt="Memories 1" loading="lazy">
+                    <img src="{{ asset('assets/images/profile/gnKencana.JPG') }}" class="collage-img img-2" alt="Memories 2" loading="lazy">
+                    <img src="{{ asset('assets/images/profile/web-developer.jpeg') }}" class="collage-img img-3" alt="Memories 3" loading="lazy">
+                    <img src="{{ asset('assets/images/profile/volunteer.jpeg') }}" class="collage-img img-4" alt="Memories 4" loading="lazy">
+                    <img src="{{ asset('assets/images/profile/futsal.JPG') }}" class="collage-img img-5" alt="Memories 5" loading="lazy">
+                    <img src="{{ asset('assets/images/profile/kiper-minsoc.jpg') }}" class="collage-img img-6" alt="Memories 6" loading="lazy">
+                    <img src="{{ asset('assets/images/organizations/bem-fst-uia.JPG') }}" class="collage-img img-7" alt="Memories 7" loading="lazy">
+                </div>
+            </div>
+
         </div>
     </div>
 </section>

@@ -325,3 +325,267 @@ body.light-mode .img-box {
 body.light-mode .experience-badge {
     border-color: #f1f5f9;
 }
+
+/* SCATTERED PHOTO COLLAGE */
+.about-collage {
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.collage-img {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 6px solid #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1;
+    cursor: pointer;
+    background: #fff;
+}
+
+body.light-mode .collage-img {
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
+}
+
+.collage-img:hover {
+    z-index: 10 !important;
+    transform: scale(1.15) rotate(0deg) !important;
+    box-shadow: 0 20px 40px rgba(56, 189, 248, 0.4);
+}
+
+body.light-mode .collage-img:hover {
+    box-shadow: 0 20px 40px rgba(14, 165, 233, 0.4);
+}
+
+/* Specific Positions & Rotations (Scattered) */
+.img-1 {
+    top: 40px;
+    left: 5%;
+    transform: rotate(-8deg);
+    z-index: 2;
+    height: 260px;
+}
+.img-2 {
+    top: 140px;
+    left: 18%;
+    transform: rotate(12deg);
+    z-index: 4;
+    height: 220px;
+    width: 180px;
+}
+.img-3 {
+    top: 60px;
+    left: 35%;
+    transform: rotate(-5deg);
+    z-index: 1;
+    height: 280px;
+}
+.img-4 {
+    top: 180px;
+    left: 45%;
+    transform: rotate(8deg);
+    z-index: 5;
+    height: 210px;
+    width: 220px;
+}
+.img-5 {
+    top: 30px;
+    right: 30%;
+    transform: rotate(-15deg);
+    z-index: 3;
+    height: 240px;
+}
+.img-6 {
+    top: 130px;
+    right: 15%;
+    transform: rotate(10deg);
+    z-index: 6;
+    height: 270px;
+}
+.img-7 {
+    top: 70px;
+    right: 2%;
+    transform: rotate(-6deg);
+    z-index: 2;
+    height: 230px;
+    width: 190px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .collage-img {
+        width: 150px;
+        height: 200px;
+        border-width: 4px;
+    }
+    .about-collage {
+        min-height: 380px;
+    }
+    .img-1 {
+        top: 30px;
+        left: 0%;
+        height: 210px;
+    }
+    .img-2 {
+        top: 120px;
+        left: 15%;
+        height: 180px;
+        width: 140px;
+    }
+    .img-3 {
+        top: 40px;
+        left: 30%;
+        height: 230px;
+    }
+    .img-4 {
+        top: 150px;
+        left: 45%;
+        height: 170px;
+        width: 180px;
+    }
+    .img-5 {
+        top: 20px;
+        right: 25%;
+        height: 200px;
+    }
+    .img-6 {
+        top: 110px;
+        right: 10%;
+        height: 220px;
+    }
+    .img-7 {
+        top: 50px;
+        right: -5%;
+        height: 190px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .collage-img {
+        width: 130px;
+        height: 170px;
+        border-width: 4px;
+    }
+    .about-collage {
+        min-height: 380px;
+    }
+    .img-1 {
+        left: 2%;
+        top: 10px;
+        height: 180px;
+        transform: rotate(-6deg);
+    }
+    .img-2 {
+        left: 22%;
+        top: 100px;
+        height: 150px;
+        width: 120px;
+        transform: rotate(10deg);
+    }
+    .img-3 {
+        left: 40%;
+        top: 20px;
+        height: 190px;
+        transform: rotate(-4deg);
+    }
+    .img-4 {
+        left: 55%;
+        top: 120px;
+        height: 140px;
+        width: 140px;
+        transform: rotate(8deg);
+    }
+    .img-5 {
+        right: 20%;
+        top: 15px;
+        height: 170px;
+        transform: rotate(-12deg);
+    }
+    .img-6 {
+        right: 5%;
+        top: 90px;
+        height: 180px;
+        transform: rotate(6deg);
+    }
+    .img-7 {
+        right: -2%;
+        top: 180px;
+        height: 160px;
+        width: 130px;
+        transform: rotate(-5deg);
+    }
+}
+
+@media (max-width: 576px) {
+    .about-collage {
+        min-height: 550px;
+    }
+    .collage-img {
+        width: 125px;
+        height: 160px;
+        border-width: 3px;
+    }
+    /* Cascading overlap for mobile */
+    .img-1 {
+        top: 0;
+        left: 5%;
+        height: 170px;
+        z-index: 2;
+        transform: rotate(-8deg);
+    }
+    .img-2 {
+        top: 50px;
+        right: 5%;
+        left: auto;
+        height: 150px;
+        z-index: 3;
+        transform: rotate(10deg);
+    }
+    .img-3 {
+        top: 130px;
+        left: 15%;
+        height: 180px;
+        z-index: 4;
+        transform: rotate(-5deg);
+    }
+    .img-4 {
+        top: 210px;
+        right: 10%;
+        left: auto;
+        height: 140px;
+        z-index: 5;
+        transform: rotate(12deg);
+    }
+    .img-5 {
+        top: 280px;
+        left: 5%;
+        right: auto;
+        height: 160px;
+        z-index: 6;
+        transform: rotate(-10deg);
+    }
+    .img-6 {
+        top: 350px;
+        right: 15%;
+        left: auto;
+        height: 150px;
+        z-index: 7;
+        transform: rotate(8deg);
+    }
+    .img-7 {
+        top: 410px;
+        left: 20%;
+        right: auto;
+        height: 160px;
+        z-index: 8;
+        transform: rotate(-6deg);
+    }
+}

@@ -28,6 +28,8 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            // favicon dashboard
+            ->favicon(asset('assets/images/profile/DeriftingDigital.png'))
             ->colors([
                 'primary' => Color::Amber,
             ])

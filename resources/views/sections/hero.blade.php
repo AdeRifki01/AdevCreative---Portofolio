@@ -52,7 +52,7 @@
                         <a href="#about" class="btn btn-hire">
                             About Me
                         </a>
-                        <a href="https://wa.me/6289635618750?text=Halo%20Ade%20Rifki,%20saya%20tertarik%20untuk%20bekerja%20sama%20dengan%20Anda." target="_blank" class="btn btn-talk">
+                        <a href="#contact" class="btn btn-talk">
                             Contact Me
                         </a>
                     </div>

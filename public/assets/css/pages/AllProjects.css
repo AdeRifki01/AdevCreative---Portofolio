@@ -1,0 +1,31 @@
+/* All Projects Page Specific Styles */
+.all-projects-header {
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.all-projects-header h1 {
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+body.light-mode .all-projects-header h1 {
+    background: linear-gradient(135deg, #0284c7, #4f46e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.all-projects-header p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+body.light-mode .all-projects-header p {
+    color: #475569;
+}
+
+.all-projects-grid {
+    padding-top: 10px;
+}

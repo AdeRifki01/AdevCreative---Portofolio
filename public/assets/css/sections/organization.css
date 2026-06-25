@@ -1,71 +1,257 @@
-/* ORGANIZATION SECTION */
+/* ORGANIZATION SECTION (TIMELINE) */
 .organization-section {
     padding: 80px 0;
     color: #fff;
+    overflow: hidden;
 }
 
-/* WRAPPER */
-.organization-wrapper {
+/* TIMELINE WRAPPER */
+.timeline-wrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline {
     position: relative;
 }
 
-/* ITEM */
-.organization-item {
+/* THE CENTRAL LINE */
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background: linear-gradient(180deg, #38bdf8 0%, rgba(56, 189, 248, 0) 100%);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    border-radius: 4px;
+}
+
+/* TIMELINE CONTAINER (Left & Right) */
+.timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 769px) {
+    .timeline-container:not(:first-child) {
+        margin-top: -60px;
+    }
+}
+
+.timeline-container.left {
+    left: 0;
+}
+
+.timeline-container.right {
+    left: 50%;
+}
+
+/* GLOWING DOTS */
+.timeline-container::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: #0f172a;
+    border: 4px solid #38bdf8;
+    top: 30px;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.8);
+    transition: all 0.4s ease;
+}
+
+.timeline-container.right::after {
+    left: -10px;
+}
+
+.timeline-container:hover::after {
+    background-color: #38bdf8;
+    transform: scale(1.2);
+}
+
+body.light-mode .timeline-container::after {
+    background-color: #f8fafc;
+    border-color: #0ea5e9;
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.6);
+}
+body.light-mode .timeline-container:hover::after {
+    background-color: #0ea5e9;
+}
+
+/* TIMELINE CONTENT (THE CARD) */
+.timeline-content {
     display: flex;
-    gap: 25px;
-    margin-bottom: 40px;
+    gap: 20px;
+    padding: 25px;
     background: #1e293b;
-    padding: 30px;
-    border-radius: 25px;
-    transition: 0.3s ease;
+    border-radius: 16px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
 }
 
-.organization-item:hover {
-    transform: translateY(-8px);
+.timeline-container:hover .timeline-content {
+    transform: translateY(-5px);
+    border-color: rgba(56, 189, 248, 0.3);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* ICON */
-.organization-icon {
-    min-width: 70px;
-    height: 70px;
+body.light-mode .timeline-content {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+body.light-mode .timeline-container:hover .timeline-content {
+    border-color: #38bdf8;
+    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.1);
+}
+
+/* ICON / IMAGE INSIDE CARD */
+.timeline-icon {
+    min-width: 65px;
+    height: 65px;
     background: rgba(56, 189, 248, 0.1);
-    border-radius: 20px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
-.organization-icon i {
-    font-size: 30px;
+.timeline-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.timeline-icon i {
+    font-size: 28px;
     color: #38bdf8;
 }
 
-/* CONTENT */
-.organization-year {
+/* TEXT CONTENT */
+.timeline-text {
+    flex: 1;
+}
+
+.timeline-year {
     display: inline-block;
-    margin-bottom: 10px;
+    padding: 4px 12px;
+    background: rgba(56, 189, 248, 0.15);
     color: #38bdf8;
+    border-radius: 20px;
+    font-size: 0.85rem;
     font-weight: 600;
+    margin-bottom: 12px;
 }
 
-.organization-content h4 {
-    margin-bottom: 15px;
+body.light-mode .timeline-year {
+    background: rgba(14, 165, 233, 0.15);
+    color: #0284c7;
+}
+
+.timeline-text h4 {
+    margin-bottom: 8px;
     font-weight: 700;
+    color: #f8fafc;
+    font-size: 1.15rem;
 }
 
-.organization-content p {
+body.light-mode .timeline-text h4 {
+    color: #0f172a;
+}
+
+.timeline-text p {
     color: #94a3b8;
-    line-height: 1.8;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin: 0;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .organization-item {
+body.light-mode .timeline-text p {
+    color: #475569;
+}
+
+/* ARROWS (Pointing to the center line) */
+.timeline-content::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 28px;
+    width: 0;
+    z-index: 1;
+    border: medium solid #1e293b;
+}
+
+.timeline-container.left .timeline-content::before {
+    right: -10px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #1e293b;
+}
+
+.timeline-container.right .timeline-content::before {
+    left: -10px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #1e293b transparent transparent;
+}
+
+body.light-mode .timeline-container.left .timeline-content::before {
+    border-color: transparent transparent transparent #ffffff;
+}
+
+body.light-mode .timeline-container.right .timeline-content::before {
+    border-color: transparent #ffffff transparent transparent;
+}
+
+/* RESPONSIVE TIMELINE (Mobile) */
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 15px;
+    }
+
+    .timeline-container.right {
+        left: 0%;
+    }
+
+    .timeline-container.left .timeline-content::before,
+    .timeline-container.right .timeline-content::before {
+        left: -10px;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #1e293b transparent transparent;
+    }
+
+    body.light-mode .timeline-container.left .timeline-content::before,
+    body.light-mode .timeline-container.right .timeline-content::before {
+        border-color: transparent #ffffff transparent transparent;
+    }
+
+    .timeline-container.left::after,
+    .timeline-container.right::after {
+        left: 21px;
+    }
+
+    .timeline-content {
         flex-direction: column;
+        gap: 15px;
         text-align: center;
     }
 
-    .organization-icon {
-        margin: auto;
+    .timeline-icon {
+        margin: 0 auto;
     }
 }

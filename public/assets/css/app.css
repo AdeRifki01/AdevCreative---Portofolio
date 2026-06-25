@@ -14,5 +14,8 @@
 @import "sections/derifting.css";
 @import "sections/contact.css";
 
+/* Pages */
+@import "pages/AllProjects.css";
+
 /* Responsive (if any) */
 @import "responsive.css";

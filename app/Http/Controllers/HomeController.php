@@ -11,7 +11,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $projects = Project::orderBy('sort_order')->get();
+        $projects = Project::orderBy('sort_order')->take(6)->get();
         $skills = Skill::orderBy('sort_order')->get();
         $organizations = Organization::orderBy('sort_order')->get();
 

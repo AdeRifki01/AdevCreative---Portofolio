@@ -2,7 +2,7 @@
     <div class="container navbar-container">
 
         <!-- Logo -->
-        <a class="navbar-brand logo-text" href="#hero">
+        <a class="navbar-brand logo-text" href="{{ url('/') }}#hero">
             Ade<span class="logo-accent">Rifki</span>
         </a>
 
@@ -27,25 +27,25 @@
             <!-- Navigation Links (Centered) -->
             <ul class="navbar-nav ms-auto me-3">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#hero">Home</a>
+                    <a class="nav-link active" href="{{ url('/') }}#hero">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="{{ url('/') }}#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="{{ url('/') }}#skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#project">Project</a>
+                    <a class="nav-link" href="{{ url('/') }}#project">Project</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#organization">Organization</a>
+                    <a class="nav-link" href="{{ url('/') }}#organization">Organization</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#derifting">Business</a>
+                    <a class="nav-link" href="{{ url('/') }}#derifting">Business</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="{{ url('/') }}#contact">Contact</a>
                 </li>
             </ul>
 

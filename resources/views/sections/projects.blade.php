@@ -46,5 +46,10 @@
             </div>
             @endforeach
         </div>
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="200">
+            <a href="{{ route('projects.index') }}" class="btn-more-projects">
+                View All Projects <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+        </div>
     </div>
 </section>

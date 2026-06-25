@@ -7,28 +7,27 @@
                 Organization and event experience that I have participated in
             </p>
         </div>
-        <div class="organization-wrapper mt-5">
-            <!-- ITEM -->
-            @foreach($organizations as $index => $org)
-            <div class="organization-item" data-aos="{{ $index % 2 == 0 ? 'fade-right' : 'fade-left' }}">
-                <div class="organization-icon">
-                    @if($org->image)
-                    <img src="{{ asset('storage/' . $org->image) }}" alt="{{ $org->name }}" style="width: 65px; height: 65px; border-radius: 10%; object-fit: cover; object-position: center;" loading="lazy">
-                    @endif
+        <div class="timeline-wrapper mt-5">
+            <div class="timeline">
+                @foreach($organizations as $index => $org)
+                <div class="timeline-container {{ $index % 2 == 0 ? 'left' : 'right' }}" data-aos="{{ $index % 2 == 0 ? 'fade-right' : 'fade-left' }}">
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            @if($org->image)
+                            <img src="{{ asset('storage/' . $org->image) }}" alt="{{ $org->name }}" loading="lazy">
+                            @else
+                            <i class="bi bi-building"></i>
+                            @endif
+                        </div>
+                        <div class="timeline-text">
+                            <span class="timeline-year">{{ $org->year }}</span>
+                            <h4>{{ $org->name }}</h4>
+                            <p>{{ $org->role }}</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="organization-content">
-                    <span class="organization-year">
-                        {{ $org->year }}
-                    </span>
-                    <h4>
-                        {{ $org->name }}
-                    </h4>
-                    <p>
-                        {{ $org->role }}
-                    </p>
-                </div>
+                @endforeach
             </div>
-            @endforeach
         </div>
     </div>
 </section>

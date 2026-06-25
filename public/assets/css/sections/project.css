@@ -126,3 +126,57 @@
     border-color: #ea580c;
     color: #fff;
 }
+
+/* MORE PROJECTS BUTTON */
+.btn-more-projects {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    color: #ffffff !important;
+    padding: 14px 40px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border: none;
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-more-projects::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.btn-more-projects:hover::before {
+    left: 100%;
+}
+
+.btn-more-projects:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(56, 189, 248, 0.4);
+    color: #ffffff;
+}
+
+body.light-mode .btn-more-projects {
+    background: linear-gradient(135deg, #0ea5e9, #6366f1);
+    box-shadow: 0 10px 20px rgba(14, 165, 233, 0.2);
+}
+
+body.light-mode .btn-more-projects:hover {
+    box-shadow: 0 15px 30px rgba(14, 165, 233, 0.4);
+}
